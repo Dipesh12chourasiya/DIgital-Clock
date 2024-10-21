@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java Project"
+        android:textColor="@color/white"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextClock
+            android:id="@+id/textclockid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:format12Hour="hh:mm:ss"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textColor="@color/colorGreen"
+            android:textSize="65sp" />
+
+        <TextClock
+            android:id="@+id/ampmid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textSize="55sp"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorGreen"
+            android:format12Hour="a"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextClock
+        android:id="@+id/textDateid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:format12Hour="MMM dd, yyyy" />
+
+</LinearLayout>
