@@ -4,4 +4,4 @@
 Shows the accurate current time in a clear and legible font.
 
 # Output
-![Project Screenshot](app/src/main/res/drawable/clock.jpgwidth=200 height=100)
+![Project Screenshot](app/src/main/res/drawable/clock.jpg width=200 height=100)
